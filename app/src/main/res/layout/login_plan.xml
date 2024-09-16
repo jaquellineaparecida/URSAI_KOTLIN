@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="48dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:paddingTop="44dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bem_vindo_novamente"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito" />
+        </LinearLayout>
+
+        <!-- Container do plano selecionado -->
+        <LinearLayout
+            android:id="@+id/planContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/plan_border">
+
+            <TextView
+                android:id="@+id/planTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito" />
+
+            <TextView
+                android:id="@+id/planDescriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito" />
+
+            <TextView
+                android:id="@+id/planPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nunito"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subscribeButton"
+            android:layout_width="371dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/subscribeButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#3F37CA"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cad_text"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:fontFamily="@font/josefin"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nomeEmpresaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nm_emp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="20dp"
+            android:autofillHints="organizationName" />
+
+        <EditText
+            android:id="@+id/tipoEmpresaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tp_emp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="10dp"
+            android:autofillHints="organizationType" />
+
+        <EditText
+            android:id="@+id/cnpjInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cnpj"
+            android:inputType="number"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="10dp"
+            android:autofillHints="creditCardNumber" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="10dp"
+            android:autofillHints="emailAddress" />
+
+        <EditText
+            android:id="@+id/telefoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefone"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="10dp"
+            android:autofillHints="phoneNumber" />
+
+        <EditText
+            android:id="@+id/senhaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:backgroundTint="#3F37CA"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="10dp"
+            android:autofillHints="password" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrar"
+            android:backgroundTint="#4895EF"
+            android:textColor="#FFF"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

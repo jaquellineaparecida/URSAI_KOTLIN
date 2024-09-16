@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062588118895",
+    "project_id": "ursai-17260",
+    "storage_bucket": "ursai-17260.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062588118895:android:218dbe7fe8edb401ffda9a",
+        "android_client_info": {
+          "package_name": "my.projects.ursai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhnaWScvSnVzr3EQlBDmB22dKRfaVNkB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
