@@ -39,3 +39,7 @@ consolidando os “visitantes” em clientes fiéis. Assim sendo, as Startups de
 ecommerce que utilizarem o URSA Recommendation System, conseguirão manter os
 seus clientes ativos, enquanto conquistam outros usuários de forma acelerada. 
 Neste aplicativo feito em Kotlin temos um app para os usuários selecionaram o Plano que mais combina com a sua empresa!
+
+## FUNCIONALIDADES
+
+Veja mais sobre as funcionalidades do projeto aqui: https://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZehttps://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZe
