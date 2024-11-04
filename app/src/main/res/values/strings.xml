@@ -41,4 +41,15 @@
     <string name="cvv">CVV</string>
     <string name="total">Total</string>
     <string name="finalizar">Finalizar</string>
+    <string name="admin"> Admin </string>
+    <string name="nome_do_plano"> Nome do plano: </string>
+    <string name="descri_o"> Descrição: </string>
+    <string name="pre_o"> Preço: </string>
+    <string name="adicionar_um_novo_plano">Adicionar um novo plano</string>
+    <string name="edit_plan">edit_plan</string>
+    <string name="delete_plan">delete</string>
+    <string name="t_tulo_do_plano">Título do plano</string>
+    <string name="descri_o_do_plano">Descrição do plano</string>
+    <string name="pre_o_do_plano">Preço do plano</string>
+    <string name="atualizar">Atualizar</string>
 </resources>

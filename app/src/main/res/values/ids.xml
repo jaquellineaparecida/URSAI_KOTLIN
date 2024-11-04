@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editPlanImage" type="id" />
+    <item name="deletePlanImage" type="id" />
+    <item name="descricao_plano" type="id" />
+    <item name="preco_plano" type="id" />
+</resources>

@@ -26,6 +26,9 @@
         <activity android:name=".LoginPlanActivity" />
         <activity android:name=".NoPlanActivity" />
         <activity android:name=".PagamentoActivity" />
+        <activity android:name="AdminActivity" />
+        <activity android:name="AdminAddActivity" />
+        <activity android:name="EditPlanModal" />
 
     </application>
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/adm_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="48dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:paddingTop="44dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admin"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddNewPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adicionar_um_novo_plano"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/nunito" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="16dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

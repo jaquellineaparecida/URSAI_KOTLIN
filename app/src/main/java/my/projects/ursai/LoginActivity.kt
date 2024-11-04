@@ -31,20 +31,25 @@ class LoginActivity : AppCompatActivity() {
             val email = emailInput.text.toString()
             val password = passwordInput.text.toString()
 
+            if (email == "admin@gmail.com" && password == "admin_") {
+                val intent = Intent(this, AdminActivity::class.java)
+                startActivity(intent)
+                finish()
+                return@setOnClickListener
+            }
+
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             val userId = auth.currentUser?.uid
                             if (userId != null) {
-                                // Verificar se o usuário tem um plano associado
                                 db.collection("pagamento").document(userId)
                                     .get()
                                     .addOnSuccessListener { document ->
                                         if (document != null && document.exists()) {
                                             val planoName = document.getString("plano") ?: ""
                                             if (planoName.isNotEmpty()) {
-                                                // Carregar detalhes do plano do Firestore
                                                 db.collection("TB_PLANO").document(getDocumentName(planoName))
                                                     .get()
                                                     .addOnSuccessListener { planoDoc ->
@@ -52,7 +57,6 @@ class LoginActivity : AppCompatActivity() {
                                                             val planoDescription = planoDoc.getString("descricao") ?: "Descrição não disponível"
                                                             val planoPrice = planoDoc.getString("preco") ?: "Preço não disponível"
 
-                                                            // Redirecionar para a LoginPlanActivity com os detalhes do plano
                                                             val intent = Intent(this, LoginPlanActivity::class.java).apply {
                                                                 putExtra("nm_plano", planoName)
                                                                 putExtra("descricao", planoDescription)
@@ -61,24 +65,20 @@ class LoginActivity : AppCompatActivity() {
                                                             startActivity(intent)
                                                         } else {
                                                             Toast.makeText(this, "Detalhes do plano não encontrados", Toast.LENGTH_SHORT).show()
-                                                            // Redirecionar para a NoPlanActivity
                                                             val intent = Intent(this, NoPlanActivity::class.java)
                                                             startActivity(intent)
                                                         }
                                                     }
                                                     .addOnFailureListener { e ->
                                                         Toast.makeText(this, "Erro ao carregar os detalhes do plano: ${e.message}", Toast.LENGTH_SHORT).show()
-                                                        // Redirecionar para a NoPlanActivity
                                                         val intent = Intent(this, NoPlanActivity::class.java)
                                                         startActivity(intent)
                                                     }
                                             } else {
-                                                // O usuário não tem um plano, redirecionar para a NoPlanActivity
                                                 val intent = Intent(this, NoPlanActivity::class.java)
                                                 startActivity(intent)
                                             }
                                         } else {
-                                            // O usuário não tem um plano, redirecionar para a NoPlanActivity
                                             val intent = Intent(this, NoPlanActivity::class.java)
                                             startActivity(intent)
                                         }
