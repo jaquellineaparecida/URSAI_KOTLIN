@@ -42,4 +42,6 @@ Neste aplicativo feito em Kotlin temos um app para os usuários selecionaram o P
 
 ## FUNCIONALIDADES
 
-Veja mais sobre as funcionalidades do projeto aqui: https://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZehttps://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZe
+Funcionalidades da Sprint anterior: https://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZehttps://youtu.be/ebnUAP_2uIY?si=RhkRK1fMvX6iLkZe
+
+Funcionalidades adicionadas para a quarta Sprint: 
